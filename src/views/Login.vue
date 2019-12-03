@@ -77,6 +77,8 @@ export default {
       });
       UserLogin({ user: "hello" })
         .then(res => {
+          this.$router.push("about")
+          //获取token,进行页面跳转
           console.log(res);
         })
         .catch(err => {
